@@ -9,7 +9,7 @@ const app: Application = express();
 app.use(morgan('dev'));
 
 // Routes
-app.use(authRoutes);
+app.use('/api/auth',authRoutes);
 
 // Settings
 app.set('port', 4000);
