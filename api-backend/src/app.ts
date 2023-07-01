@@ -12,6 +12,6 @@ app.use(morgan('dev'));
 app.use(authRoutes);
 
 // Settings
-app.set('port', 3000);
+app.set('port', 4000);
 
 export default app;
