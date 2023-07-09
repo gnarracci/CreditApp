@@ -13,6 +13,6 @@ app.use(express.json());
 app.use('/api/auth',authRoutes);
 
 // Settings
-app.set('port', 4000);
+app.set('port', process.env.PORT || 4000);
 
 export default app;
