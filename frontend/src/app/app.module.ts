@@ -12,6 +12,16 @@ import { NotfoundComponent } from './components/notfound/notfound.component';
 import { CustomerComponent } from './components/customer/customer.component';
 import { ConfigurationComponent } from './components/configuration/configuration.component';
 import { MediaComponent } from './components/media/media.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
+
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
+import {MatButtonModule} from '@angular/material/button';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -23,12 +33,21 @@ import { MediaComponent } from './components/media/media.component';
     NotfoundComponent,
     CustomerComponent,
     ConfigurationComponent,
-    MediaComponent
+    MediaComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormsModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatButtonModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatCardModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

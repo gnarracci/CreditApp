@@ -26,6 +26,9 @@ const userSchema = new Schema({
         type: String,
         required: true
     }
+}, {
+    timestamps: true,
+    versionKey: false
 });
 
 userSchema.methods.encryptPassword = async (password: string): Promise<string> => {
