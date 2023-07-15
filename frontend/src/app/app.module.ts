@@ -11,6 +11,7 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { NotfoundComponent } from './components/notfound/notfound.component';
 import { CustomerComponent } from './components/customer/customer.component';
 import { ConfigurationComponent } from './components/configuration/configuration.component';
+import { MediaComponent } from './components/media/media.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ConfigurationComponent } from './components/configuration/configuration
     DashboardComponent,
     NotfoundComponent,
     CustomerComponent,
-    ConfigurationComponent
+    ConfigurationComponent,
+    MediaComponent
   ],
   imports: [
     BrowserModule,
