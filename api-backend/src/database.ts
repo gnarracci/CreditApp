@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-mongoose.connect('mongodb://localhost/creditApp', {
+mongoose.connect('mongodb://mongo/creditApp', {
 
 })
     .then(db => console.log('Database is Connected'))
